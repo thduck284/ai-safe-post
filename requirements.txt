@@ -1,8 +1,9 @@
-flask>=3.0
-flask-cors
-gunicorn
-torch
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.2.1+cpu
 transformers
+flask
+flask-cors
 gdown
+gunicorn
 sentencepiece
 protobuf

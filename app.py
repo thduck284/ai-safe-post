@@ -19,7 +19,7 @@ class PhoBERTViolation(nn.Module):
     def __init__(self, model_name):
         super().__init__()
         self.config = AutoConfig.from_pretrained(model_name)
-        self.phobert = AutoModel.from_pretrained(model_name)
+        self.phobert = AutoModel.from_pretrained(model_name, low_cpu_mem_usage=True)
         hidden = self.config.hidden_size
         self.violation_head = nn.Linear(hidden, 2)
         self.keyword_head = nn.Linear(hidden, 2)
@@ -65,6 +65,8 @@ if download_model_if_needed():
         model = PhoBERTViolation(MODEL_BASE)
         model.load_state_dict(torch.load(bin_path, map_location=torch.device("cpu")))
         model.eval()
+        import gc
+        gc.collect()
     except:
         pass
 
