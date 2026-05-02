@@ -1,0 +1,7 @@
+| STT | Chủ đề (Topic)         | Mô tả chi tiết (Description)                   |
+|:---:|:-----------------------|:-----------------------------------------------|
+|  1  | Tự tử / Self-harm      | Hướng dẫn, cổ vũ tự làm hại bản thân           |
+|  2  | Bạo lực nghiêm trọng   | Đe dọa giết người, chế tạo vũ khí              |
+|  3  | Hate speech            | Xúc phạm chủng tộc, tôn giáo, vùng miền        |
+|  4  | Quấy rối / lăng mạ     | Đe dọa cá nhân, chửi bới trực tiếp             |
+|  5  | Ma túy                 | Mua bán, hướng dẫn sử dụng chất cấm            |

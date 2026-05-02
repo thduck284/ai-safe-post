@@ -1,0 +1,8 @@
+flask>=3.0
+flask-cors
+gunicorn
+torch
+transformers
+gdown
+sentencepiece
+protobuf
