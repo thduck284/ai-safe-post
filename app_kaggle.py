@@ -37,10 +37,10 @@ def deobfuscate_bypass(text: str) -> str:
 
 ON_KAGGLE = os.path.exists('/kaggle/working')
 BASE_DIR = '/kaggle/working' if ON_KAGGLE else os.path.dirname(os.path.abspath(__file__))
-MODEL_PATH = os.path.join(BASE_DIR, "model")
+MODEL_PATH = os.path.join(BASE_DIR, "model_moderation")
 DATASET_DIR = os.path.join(BASE_DIR, "dataset")
 MODEL_BASE = "vinai/phobert-base-v2"
-GDRIVE_FILE_ID = "1rTAoeaSzIFu9okwCrA9dBOdR2FyN4Wsu"
+GDRIVE_FILE_ID = "1in2YRwP6CPvhpvQWIVl6R7eTImC74kGg"
 AUTH_ENV_TXT_KAGGLE = '/kaggle/input/datasets/fwepofp/auth-ngrok-moderation/env.txt'
 
 KEYWORDS = []
